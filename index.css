@@ -44,3 +44,23 @@ button:hover {
     cursor: pointer;
     background-color: #BD8C70;
 }
+
+.delete-btn{
+    background: none;
+    color: red;
+    border-radius: 50%;
+    border: 1px solid red;
+    height: 10px;
+    width: 10px;
+    margin-top:12px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.delete-btn::before,
+.delete-btn::after {
+    content: "X";
+    position: absolute;
+    left: 3px;
+    top: 1px;
+}
